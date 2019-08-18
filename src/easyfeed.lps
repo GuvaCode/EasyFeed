@@ -3,7 +3,7 @@
   <ProjectSession>
     <Version Value="11"/>
     <BuildModes Active="Default"/>
-    <Units Count="8">
+    <Units Count="9">
       <Unit0>
         <Filename Value="easyfeed.lpr"/>
         <IsPartOfProject Value="True"/>
@@ -57,7 +57,7 @@
         <Filename Value="../../Компоненты/Cross.CodebotExt/src/musicinfo.pas"/>
         <UnitName Value="MusicInfo"/>
         <EditorIndex Value="2"/>
-        <TopLine Value="98"/>
+        <TopLine Value="264"/>
         <CursorPos X="41" Y="113"/>
         <UsageCount Value="11"/>
         <Loaded Value="True"/>
@@ -67,11 +67,18 @@
         <IsPartOfProject Value="True"/>
         <IsVisibleTab Value="True"/>
         <EditorIndex Value="1"/>
-        <TopLine Value="23"/>
-        <CursorPos X="5" Y="85"/>
+        <TopLine Value="47"/>
+        <CursorPos X="5" Y="70"/>
         <UsageCount Value="22"/>
         <Loaded Value="True"/>
       </Unit7>
+      <Unit8>
+        <Filename Value="../../Компоненты/easyrss-master/demo/count/demo.lpr"/>
+        <EditorIndex Value="3"/>
+        <CursorPos X="17" Y="23"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit8>
     </Units>
     <JumpHistory Count="22" HistoryIndex="21">
       <Position1>

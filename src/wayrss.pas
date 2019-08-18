@@ -23,6 +23,7 @@ uses
   function GetURI: string;
   procedure SetReadCount(AValue: integer);
   property URI:           string  read GetURI;
+ // property Name           string  read GetName;
   property Category:      string  read GetCategory;
   property NewsCount:     integer read GetNewsCount;
   property ReadCount:     integer read GetReadCount write SetReadCount;
@@ -33,7 +34,7 @@ uses
 
 
 implementation
-
+ uses EasyRSS;
 type
 
   { TWayRssInfo }
@@ -56,8 +57,29 @@ type
 { TWayRssInfo }
 
 constructor TWayRssInfo.Create(URI: String);
+var
+  item: TRSSItem;
+  Rss: TRSSReader;
 begin
+   rss := TRSSReader.Create;
+  try
+    Rss.LoadFromHttp(URI);
+    FNewsCount            :=Rss.Count;
+    FCategory             :=Rss.Category;
+    FURI                  :=URI;
+  //  Rss.Title:=;
+  {  for item in rss.Items do
+    begin
 
+
+
+      WriteLn('<b>Title:</b> ', item.Title);
+      WriteLn('<b>Description:</b> ', item.Description);
+      Write('<hr>');
+    end; }
+  finally
+    rss.Free;
+  end;
 end;
 
 function TWayRssInfo.GetCategory: string;

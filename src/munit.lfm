@@ -1,9 +1,9 @@
 object frmFeed: TfrmFeed
-  Left = 198
+  Left = 240
   Height = 555
-  Top = 145
+  Top = 215
   Width = 809
-  Caption = 'LiteFeed'
+  Caption = 'Easy Feed'
   ClientHeight = 555
   ClientWidth = 809
   LCLVersion = '2.0.4.0'
@@ -26,6 +26,7 @@ object frmFeed: TfrmFeed
       Top = 0
       Width = 208
       Align = alClient
+      BorderStyle = bsSingle
       DesktopFont = True
       HotTrack = False
       ItemHeight = 15
@@ -59,6 +60,7 @@ object frmFeed: TfrmFeed
       Top = 0
       Width = 588
       Align = alClient
+      BorderStyle = bsSingle
       DesktopFont = True
       HotTrack = False
       ItemHeight = 15

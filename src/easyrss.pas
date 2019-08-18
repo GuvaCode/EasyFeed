@@ -34,7 +34,6 @@ type
   end;
 
   { TRSSItem }
-
   TRSSItem = class
   private
     FAuthor: string;
@@ -64,9 +63,7 @@ type
   end;
 
   TRSSItems = specialize TFPGList<TRSSItem>;
-
   { TRSS }
-
   TRSS = class
   private
     FCategory: string;
@@ -196,6 +193,8 @@ begin
     Result := '';
 end;
 
+
+
 { TRSSItem }
 
 constructor TRSSItem.Create;
@@ -233,6 +232,7 @@ end;
 constructor TRSS.Create;
 begin
   FItems := TRSSItems.Create;
+  FImage:= TRSSImage.Create;
   FUTF8 := True;
   FLanguage := 'en-us';
   FGenerator := 'EasyRSS plugin';
@@ -359,14 +359,18 @@ begin
     FGenerator := GetTagValue(VXmlChannel, 'generator');
     FDocs := GetTagValue(VXmlChannel, 'docs');
     VXmlImage := VXmlChannel.FindNode('image');
-    if Assigned(VXmlImage) then
+
+    if Assigned(VXmlImage)
+    then
     begin
-      if not Assigned(FImage) then
-        FImage := TRSSImage.Create;
+     if  Assigned(FImage) then
+      FImage := TRSSImage.Create;
       FImage.Title := GetTagValue(VXmlImage, 'title');
-      FImage.Url := GetTagValue(VXmlImage, 'url');
-      FImage.Link := GetTagValue(VXmlImage, 'link');
+      FImage.Url   := GetTagValue(VXmlImage, 'url');
+      FImage.Link  := GetTagValue(VXmlImage, 'link');
     end;
+
+
     VXmlItem := VXmlChannel.FindNode('item');
     Clear;
     while Assigned(VXmlItem) do
