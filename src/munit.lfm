@@ -68,7 +68,7 @@ object frmFeed: TfrmFeed
       BorderStyle = bsSingle
       DesktopFont = True
       HotTrack = False
-      ItemHeight = 200
+      ItemHeight = 80
       MultiSelect = False
       ParentColor = False
       TabOrder = 0

@@ -358,7 +358,7 @@ begin
     FCategory := GetTagValue(VXmlChannel, 'category');
     FGenerator := GetTagValue(VXmlChannel, 'generator');
     FDocs := GetTagValue(VXmlChannel, 'docs');
-    VXmlImage := VXmlChannel.FindNode('image');
+   // VXmlImage := VXmlChannel.FindNode('image');
 
     if Assigned(VXmlImage)
     then

@@ -87,10 +87,16 @@ procedure TfrmFeed.lstFeedDrawItem(Sender: TObject; Surface: ISurface;
   Index: Integer; Rect: TRectI; State: TDrawState);
  var
    S: string;
+   Rss: IWayRssInfo;
+   i:integer;
 begin
-    if dsSelected in State then FillRectSelected(Surface, Rect, 2);
+    Rss := FWayList[lstCategory.ItemIndex];
+    S:=Rss.GetRss.Elements[Index].PubDate;
+
+  if dsSelected in State then FillRectSelected(Surface, Rect, 2);
 //S:=Rss.Items;
-   Surface.TextOut(Theme.Font, S, rect, drLeft);
+
+Surface.TextOut(Theme.Font, S, rect, drLeft);
 end;
 
 procedure TfrmFeed.PictureLoadFromUrl(const APicture: IBitmap;
@@ -113,6 +119,7 @@ begin
   AddRssUrl('https://castle-engine.io/wp/feed/');
   AddRssUrl('https://lazplanet.blogspot.com/feeds/posts/default?alt=rss');
   AddRssUrl('https://devlaz.ru/feed/');
+  AddRssUrl('http://feed.rutracker.cc/atom/f/1992.atom');
 end;
 
 procedure TfrmFeed.FormCreate(Sender: TObject);
