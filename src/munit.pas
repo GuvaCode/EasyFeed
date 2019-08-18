@@ -5,8 +5,8 @@ unit munit;
 interface
 
 uses
-  Classes, SysUtils, Forms, Controls, Graphics, Dialogs, ExtCtrls,
-  wayrss,
+  Classes, SysUtils, Forms, Controls, Graphics, Dialogs, ExtCtrls, StdCtrls,
+  wayrss, EasyRSS,
   fphttpclient,
   Codebot.System,
   Codebot.Graphics,
@@ -21,16 +21,22 @@ type
     ImgCategory: TImageStrip;
     lstFeed: TDrawList;
     lstCategory: TDrawList;
+    Memo1: TMemo;
     pnlCenter: TPanel;
     pnlLeft: TPanel;
     Splitter: TSplitter;
+    procedure FormCreate(Sender: TObject);
+    procedure FormDestroy(Sender: TObject);
     procedure FormShow(Sender: TObject);
+    procedure lstCategoryClick(Sender: TObject);
     procedure lstCategoryDrawItem(Sender: TObject; Surface: ISurface;
       Index: Integer; Rect: TRectI; State: TDrawState);
     procedure lstFeedDrawItem(Sender: TObject; Surface: ISurface;
       Index: Integer; Rect: TRectI; State: TDrawState);
   private
      FWayList: TWayRssInfoList;
+
+
      procedure PictureLoadFromUrl(const APicture: IBitmap; const AUrl: String);
   public
      procedure AddRssUrl(RssUrl:string);
@@ -74,11 +80,12 @@ const
 procedure TfrmFeed.lstFeedDrawItem(Sender: TObject; Surface: ISurface;
   Index: Integer; Rect: TRectI; State: TDrawState);
  var
-   Rss: IWayRssInfo;
+
    S: string;
 begin
-   Rss := FWayList[Index];
-   S:=Rss.Description;
+
+
+   //S:=Rss.Items;
    Surface.TextOut(Theme.Font, S, rect, drLeft);
 end;
 
@@ -102,6 +109,24 @@ begin
   AddRssUrl('https://castle-engine.io/wp/feed/');
   AddRssUrl('https://lazplanet.blogspot.com/feeds/posts/default?alt=rss');
   AddRssUrl('https://devlaz.ru/feed/');
+end;
+
+procedure TfrmFeed.FormCreate(Sender: TObject);
+begin
+
+end;
+
+procedure TfrmFeed.FormDestroy(Sender: TObject);
+begin
+
+end;
+
+procedure TfrmFeed.lstCategoryClick(Sender: TObject);
+
+begin
+
+
+
 end;
 
 
