@@ -19,8 +19,9 @@
         <ComponentName Value="frmFeed"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <TopLine Value="103"/>
-        <CursorPos X="55" Y="122"/>
+        <IsVisibleTab Value="True"/>
+        <TopLine Value="101"/>
+        <CursorPos X="61" Y="122"/>
         <UsageCount Value="39"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
@@ -95,6 +96,7 @@
         <EditorIndex Value="5"/>
         <TopLine Value="64"/>
         <CursorPos X="14" Y="115"/>
+        <ComponentState Value="1"/>
         <UsageCount Value="18"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
@@ -102,10 +104,9 @@
       <Unit11>
         <Filename Value="easyrss.pas"/>
         <UnitName Value="EasyRSS"/>
-        <IsVisibleTab Value="True"/>
         <EditorIndex Value="6"/>
-        <TopLine Value="354"/>
-        <CursorPos X="6" Y="361"/>
+        <TopLine Value="19"/>
+        <CursorPos Y="361"/>
         <UsageCount Value="17"/>
         <Loaded Value="True"/>
       </Unit11>
@@ -206,124 +207,124 @@
     </Units>
     <JumpHistory Count="30" HistoryIndex="29">
       <Position1>
-        <Filename Value="wayrss.pas"/>
-        <Caret Line="77" Column="28" TopLine="63"/>
-      </Position1>
-      <Position2>
-        <Filename Value="munit.pas"/>
-        <Caret Line="138" Column="37" TopLine="131"/>
-      </Position2>
-      <Position3>
-        <Filename Value="munit.pas"/>
-        <Caret Line="37" Column="6" TopLine="24"/>
-      </Position3>
-      <Position4>
         <Filename Value="../../Компоненты/easyrss-master/demo/count/demo.lpr"/>
         <Caret Line="15" Column="29"/>
+      </Position1>
+      <Position2>
+        <Filename Value="wayrss.pas"/>
+        <Caret Line="79" Column="30" TopLine="65"/>
+      </Position2>
+      <Position3>
+        <Filename Value="wayrss.pas"/>
+        <Caret Line="78" Column="26" TopLine="64"/>
+      </Position3>
+      <Position4>
+        <Filename Value="wayrss.pas"/>
+        <Caret Line="80" Column="5" TopLine="60"/>
       </Position4>
       <Position5>
         <Filename Value="wayrss.pas"/>
-        <Caret Line="79" Column="30" TopLine="65"/>
+        <Caret Line="68" Column="18" TopLine="64"/>
       </Position5>
       <Position6>
         <Filename Value="wayrss.pas"/>
-        <Caret Line="78" Column="26" TopLine="64"/>
+        <Caret Line="32" Column="20" TopLine="13"/>
       </Position6>
       <Position7>
         <Filename Value="wayrss.pas"/>
-        <Caret Line="80" Column="5" TopLine="60"/>
+        <Caret Line="31" Column="54" TopLine="12"/>
       </Position7>
       <Position8>
         <Filename Value="wayrss.pas"/>
-        <Caret Line="68" Column="18" TopLine="64"/>
+        <Caret Line="60" Column="32" TopLine="42"/>
       </Position8>
       <Position9>
         <Filename Value="wayrss.pas"/>
-        <Caret Line="32" Column="20" TopLine="13"/>
+        <Caret Line="93" Column="7" TopLine="72"/>
       </Position9>
       <Position10>
         <Filename Value="wayrss.pas"/>
-        <Caret Line="31" Column="54" TopLine="12"/>
+        <Caret Line="82" Column="29" TopLine="64"/>
       </Position10>
       <Position11>
         <Filename Value="wayrss.pas"/>
-        <Caret Line="60" Column="32" TopLine="42"/>
+        <Caret Line="117" Column="2" TopLine="99"/>
       </Position11>
       <Position12>
-        <Filename Value="wayrss.pas"/>
-        <Caret Line="93" Column="7" TopLine="72"/>
-      </Position12>
-      <Position13>
-        <Filename Value="wayrss.pas"/>
-        <Caret Line="82" Column="29" TopLine="64"/>
-      </Position13>
-      <Position14>
-        <Filename Value="wayrss.pas"/>
-        <Caret Line="117" Column="2" TopLine="99"/>
-      </Position14>
-      <Position15>
         <Filename Value="munit.pas"/>
         <Caret Line="130" Column="60" TopLine="120"/>
-      </Position15>
-      <Position16>
+      </Position12>
+      <Position13>
         <Filename Value="easyrss.pas"/>
         <Caret Line="336" Column="45" TopLine="319"/>
-      </Position16>
-      <Position17>
+      </Position13>
+      <Position14>
         <Filename Value="munit.pas"/>
         <Caret Line="129" Column="4" TopLine="120"/>
+      </Position14>
+      <Position15>
+        <Filename Value="wayrss.pas"/>
+        <Caret Line="86" Column="4" TopLine="72"/>
+      </Position15>
+      <Position16>
+        <Filename Value="wayrss.pas"/>
+        <Caret Line="71" Column="5" TopLine="66"/>
+      </Position16>
+      <Position17>
+        <Filename Value="easyrss.pas"/>
+        <Caret Line="15" Column="3" TopLine="6"/>
       </Position17>
       <Position18>
         <Filename Value="wayrss.pas"/>
-        <Caret Line="86" Column="4" TopLine="72"/>
+        <Caret Line="27" Column="4" TopLine="12"/>
       </Position18>
       <Position19>
         <Filename Value="wayrss.pas"/>
-        <Caret Line="71" Column="5" TopLine="66"/>
+        <Caret Line="56" Column="5" TopLine="37"/>
       </Position19>
       <Position20>
         <Filename Value="easyrss.pas"/>
-        <Caret Line="15" Column="3" TopLine="6"/>
+        <Caret Line="333" TopLine="319"/>
       </Position20>
       <Position21>
         <Filename Value="wayrss.pas"/>
-        <Caret Line="27" Column="4" TopLine="12"/>
+        <Caret Line="54" Column="5" TopLine="38"/>
       </Position21>
       <Position22>
-        <Filename Value="wayrss.pas"/>
-        <Caret Line="56" Column="5" TopLine="37"/>
+        <Filename Value="munit.pas"/>
+        <Caret Line="142" Column="15" TopLine="122"/>
       </Position22>
       <Position23>
-        <Filename Value="easyrss.pas"/>
-        <Caret Line="333" TopLine="319"/>
+        <Filename Value="munit.pas"/>
+        <Caret Line="141" Column="15" TopLine="121"/>
       </Position23>
       <Position24>
-        <Filename Value="wayrss.pas"/>
-        <Caret Line="54" Column="5" TopLine="38"/>
+        <Filename Value="munit.pas"/>
+        <Caret Line="130" Column="4" TopLine="117"/>
       </Position24>
       <Position25>
         <Filename Value="munit.pas"/>
-        <Caret Line="142" Column="15" TopLine="122"/>
+        <Caret Line="132" TopLine="123"/>
       </Position25>
       <Position26>
         <Filename Value="munit.pas"/>
-        <Caret Line="141" Column="15" TopLine="121"/>
+        <Caret Line="96" Column="68" TopLine="80"/>
       </Position26>
       <Position27>
         <Filename Value="munit.pas"/>
-        <Caret Line="130" Column="4" TopLine="117"/>
+        <Caret Line="122" Column="3" TopLine="101"/>
       </Position27>
       <Position28>
-        <Filename Value="munit.pas"/>
-        <Caret Line="132" TopLine="123"/>
+        <Filename Value="easyrss.pas"/>
+        <Caret Line="371" Column="11" TopLine="425"/>
       </Position28>
       <Position29>
-        <Filename Value="munit.pas"/>
-        <Caret Line="96" Column="68" TopLine="80"/>
+        <Filename Value="easyrss.pas"/>
+        <Caret Line="15" Column="18"/>
       </Position29>
       <Position30>
-        <Filename Value="munit.pas"/>
-        <Caret Line="122" Column="55" TopLine="103"/>
+        <Filename Value="easyrss.pas"/>
+        <Caret Line="372" TopLine="154"/>
       </Position30>
     </JumpHistory>
     <RunParams>

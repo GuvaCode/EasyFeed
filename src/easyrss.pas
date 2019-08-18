@@ -12,7 +12,7 @@ unit EasyRSS;
 interface
 
 uses
-  DOM, XmlRead, FGL, HTTPDefs, FPHttpClient, Classes, SysUtils;
+  laz2_DOM, laz2_XmlRead, FGL, HTTPDefs, FPHttpClient, Classes, SysUtils;
 
 type
 
@@ -358,18 +358,16 @@ begin
     FCategory := GetTagValue(VXmlChannel, 'category');
     FGenerator := GetTagValue(VXmlChannel, 'generator');
     FDocs := GetTagValue(VXmlChannel, 'docs');
-   // VXmlImage := VXmlChannel.FindNode('image');
+    VXmlImage := VXmlChannel.FindNode('image');
 
     if Assigned(VXmlImage)
     then
     begin
      if  Assigned(FImage) then
-      FImage := TRSSImage.Create;
       FImage.Title := GetTagValue(VXmlImage, 'title');
       FImage.Url   := GetTagValue(VXmlImage, 'url');
       FImage.Link  := GetTagValue(VXmlImage, 'link');
     end;
-
 
     VXmlItem := VXmlChannel.FindNode('item');
     Clear;

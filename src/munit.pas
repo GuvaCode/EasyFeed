@@ -91,7 +91,7 @@ procedure TfrmFeed.lstFeedDrawItem(Sender: TObject; Surface: ISurface;
    i:integer;
 begin
     Rss := FWayList[lstCategory.ItemIndex];
-    S:=Rss.GetRss.Elements[Index].PubDate;
+    S:=Rss.GetRss.Elements[Index].Title;
 
   if dsSelected in State then FillRectSelected(Surface, Rect, 2);
 //S:=Rss.Items;
@@ -119,7 +119,7 @@ begin
   AddRssUrl('https://castle-engine.io/wp/feed/');
   AddRssUrl('https://lazplanet.blogspot.com/feeds/posts/default?alt=rss');
   AddRssUrl('https://devlaz.ru/feed/');
-  AddRssUrl('http://feed.rutracker.cc/atom/f/1992.atom');
+  AddRssUrl('http://freepascal.ru/forum/feed.php?mode=forums');
 end;
 
 procedure TfrmFeed.FormCreate(Sender: TObject);
