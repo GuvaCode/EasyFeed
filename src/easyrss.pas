@@ -12,7 +12,7 @@ unit EasyRSS;
 interface
 
 uses
-  laz2_DOM, laz2_XmlRead, FGL, HTTPDefs, FPHttpClient, Classes, SysUtils;
+  DOM, XmlRead, FGL, HTTPDefs, FPHttpClient, Classes, SysUtils;
 
 type
 

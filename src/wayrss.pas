@@ -11,19 +11,20 @@ uses
  SysUtils, EasyRSS,
  Codebot.System;
 
- type
+type
   { IWayRssInfo }
   IWayRssInfo = interface ['{4C46E053-1C4A-430C-A8B3-E3A4DDD46129}']
 
   function GetDescription: string;
   function GetImageUrl:    string;
+  function GetRss: TRSSReader;
   function GetTitle:       string;
   function GetURL:         string;
   property URL:            string  read GetURL;
   property Title:          string  read GetTitle;
   property ImageUrl:       string  read GetImageUrl;
   property Description:    string  read GetDescription;
-
+  property Rss: TRSSReader read GetRss;// write SetRss;
   end;
 
   function AddRss(RssUrl: String) : IWayRssInfo;
@@ -43,12 +44,14 @@ implementation
   FTitle:                  string;
   FImageUrl:               string;
   FDescription:            string;
+  FRSSReader:              TRSSReader;
   public
   constructor Create(URL: string);
   function GetImageUrl:    string;
   function GetTitle:       string;
   function GetURL:         string;
   function GetDescription: string;
+  function GetRss: TRSSReader;
  end;
 
  function AddRss(RssUrl: String): IWayRssInfo;
@@ -59,18 +62,16 @@ implementation
  { TWayRssInfo }
 
   constructor TWayRssInfo.Create(URL: string);
-  var
-  Rss: TRSSReader;
   begin
-   Rss := TRSSReader.Create;
+    FRSSReader:= TRSSReader.Create;
    try
-    Rss.LoadFromHttp(URL);
+    FRSSReader.LoadFromHttp(URL);
     FURL:=URL;
-    FTitle:=Rss.Title;
-    FImageUrl:=Rss.Image.Url;
-    FDescription:=Rss.Content;
+    FTitle:=FRSSReader.Title;
+    FImageUrl:=FRSSReader.Image.Url;
+    FDescription:=FRSSReader.Content;
    finally
-    rss.Free;
+    //Rss.Free;
    end;
   end;
 
@@ -93,6 +94,12 @@ implementation
   begin
     Result:=FDescription;
   end;
+
+ function TWayRssInfo.GetRss: TRSSReader;
+  begin
+    result:=FRSSReader;
+  end;
+
 
 end.
 

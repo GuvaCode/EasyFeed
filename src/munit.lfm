@@ -36,8 +36,8 @@ object frmFeed: TfrmFeed
       MultiSelect = False
       ParentColor = False
       TabOrder = 0
-      OnClick = lstCategoryClick
       OnDrawItem = lstCategoryDrawItem
+      OnSelectItem = lstCategorySelectItem
     end
   end
   object Splitter: TSplitter
@@ -68,21 +68,11 @@ object frmFeed: TfrmFeed
       BorderStyle = bsSingle
       DesktopFont = True
       HotTrack = False
-      ItemHeight = 15
+      ItemHeight = 200
       MultiSelect = False
       ParentColor = False
       TabOrder = 0
       OnDrawItem = lstFeedDrawItem
-      object Memo1: TMemo
-        Left = 96
-        Height = 90
-        Top = 96
-        Width = 472
-        Lines.Strings = (
-          'Memo1'
-        )
-        TabOrder = 0
-      end
     end
   end
   object ImgCategory: TImageStrip

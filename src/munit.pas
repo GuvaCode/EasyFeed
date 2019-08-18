@@ -6,7 +6,7 @@ interface
 
 uses
   Classes, SysUtils, Forms, Controls, Graphics, Dialogs, ExtCtrls, StdCtrls,
-  wayrss, EasyRSS,
+  WayRss, EasyRSS,
   fphttpclient,
   Codebot.System,
   Codebot.Graphics,
@@ -21,16 +21,15 @@ type
     ImgCategory: TImageStrip;
     lstFeed: TDrawList;
     lstCategory: TDrawList;
-    Memo1: TMemo;
     pnlCenter: TPanel;
     pnlLeft: TPanel;
     Splitter: TSplitter;
     procedure FormCreate(Sender: TObject);
     procedure FormDestroy(Sender: TObject);
     procedure FormShow(Sender: TObject);
-    procedure lstCategoryClick(Sender: TObject);
     procedure lstCategoryDrawItem(Sender: TObject; Surface: ISurface;
       Index: Integer; Rect: TRectI; State: TDrawState);
+    procedure lstCategorySelectItem(Sender: TObject);
     procedure lstFeedDrawItem(Sender: TObject; Surface: ISurface;
       Index: Integer; Rect: TRectI; State: TDrawState);
   private
@@ -74,18 +73,23 @@ const
 
     T:=  TRectF.Create(R.X+36,Rect.Y,Rect.Width-R.Width-8,Rect.Height);
     Surface.TextOut(Theme.Font, S, T, drLeft);
-
   end;
+
+procedure TfrmFeed.lstCategorySelectItem(Sender: TObject);
+ var Rss: IWayRssInfo;
+ begin
+   Rss := FWayList[lstCategory.ItemIndex];
+   caption:=Rss.GetRss.Elements[lstCategory.ItemIndex].Title;
+   lstFeed.Count:=Rss.GetRss.Count;
+end;
 
 procedure TfrmFeed.lstFeedDrawItem(Sender: TObject; Surface: ISurface;
   Index: Integer; Rect: TRectI; State: TDrawState);
  var
-
    S: string;
 begin
-
-
-   //S:=Rss.Items;
+    if dsSelected in State then FillRectSelected(Surface, Rect, 2);
+//S:=Rss.Items;
    Surface.TextOut(Theme.Font, S, rect, drLeft);
 end;
 
@@ -120,15 +124,6 @@ procedure TfrmFeed.FormDestroy(Sender: TObject);
 begin
 
 end;
-
-procedure TfrmFeed.lstCategoryClick(Sender: TObject);
-
-begin
-
-
-
-end;
-
 
 procedure TfrmFeed.AddRssUrl(RssUrl: string);
 Var B: IBitmap;
