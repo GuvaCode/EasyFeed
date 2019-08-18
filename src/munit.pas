@@ -27,8 +27,9 @@ type
     procedure FormShow(Sender: TObject);
     procedure lstCategoryDrawItem(Sender: TObject; Surface: ISurface;
       Index: Integer; Rect: TRectI; State: TDrawState);
+    procedure lstFeedDrawItem(Sender: TObject; Surface: ISurface;
+      Index: Integer; Rect: TRectI; State: TDrawState);
   private
-     FWayPic: TArrayList<IBitmap>;
      FWayList: TWayRssInfoList;
      procedure PictureLoadFromUrl(const APicture: IBitmap; const AUrl: String);
   public
@@ -50,9 +51,7 @@ const
   Margin = 4;
  var
   Rss: IWayRssInfo;
-
   S: string;
-  I: Integer;
   T: TRectF;
   R: TRectF;
   begin
@@ -71,6 +70,17 @@ const
     Surface.TextOut(Theme.Font, S, T, drLeft);
 
   end;
+
+procedure TfrmFeed.lstFeedDrawItem(Sender: TObject; Surface: ISurface;
+  Index: Integer; Rect: TRectI; State: TDrawState);
+ var
+   Rss: IWayRssInfo;
+   S: string;
+begin
+   Rss := FWayList[Index];
+   S:=Rss.Description;
+   Surface.TextOut(Theme.Font, S, rect, drLeft);
+end;
 
 procedure TfrmFeed.PictureLoadFromUrl(const APicture: IBitmap;
   const AUrl: String);
@@ -91,8 +101,9 @@ procedure TfrmFeed.FormShow(Sender: TObject);
 begin
   AddRssUrl('https://castle-engine.io/wp/feed/');
   AddRssUrl('https://lazplanet.blogspot.com/feeds/posts/default?alt=rss');
-  AddRssUrl('http://www.delphisources.ru/forum/external_mod.php?type=RSS2');
+  AddRssUrl('https://devlaz.ru/feed/');
 end;
+
 
 procedure TfrmFeed.AddRssUrl(RssUrl: string);
 Var B: IBitmap;

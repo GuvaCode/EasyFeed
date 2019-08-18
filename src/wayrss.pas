@@ -8,20 +8,23 @@ unit rssway
 interface
 
 uses
- SysUtils,
+ SysUtils, EasyRSS,
  Codebot.System;
 
  type
   { IWayRssInfo }
   IWayRssInfo = interface ['{4C46E053-1C4A-430C-A8B3-E3A4DDD46129}']
+
   function GetDescription: string;
   function GetImageUrl:    string;
+  function GetItems: TRSSItems;
   function GetTitle:       string;
   function GetURL:         string;
   property URL:            string  read GetURL;
   property Title:          string  read GetTitle;
   property ImageUrl:       string  read GetImageUrl;
   property Description:    string  read GetDescription;
+  property Items:          TRSSItems read GetItems;
   end;
 
   function AddRss(RssUrl: String) : IWayRssInfo;
@@ -31,7 +34,7 @@ uses
 
 
 implementation
- uses EasyRSS;
+
  type
 
   { TWayRssInfo }
@@ -41,12 +44,14 @@ implementation
   FTitle:                  string;
   FImageUrl:               string;
   FDescription:            string;
+  FItems:                  TRSSItems;
   public
   constructor Create(URL: string);
   function GetImageUrl:    string;
   function GetTitle:       string;
   function GetURL:         string;
   function GetDescription: string;
+  function GetItems:       TRSSItems;
  end;
 
  function AddRss(RssUrl: String): IWayRssInfo;
@@ -67,6 +72,7 @@ implementation
     FTitle:=Rss.Title;
     FImageUrl:=Rss.Image.Url;
     FDescription:=Rss.Content;
+    FItems:=Rss.Items;
    finally
     rss.Free;
    end;
@@ -91,6 +97,13 @@ implementation
   begin
     Result:=FDescription;
   end;
+
+  function TWayRssInfo.GetItems: TRSSItems;
+  begin
+    Result:=FItems;
+  end;
+
+
 
 end.
 

@@ -1,7 +1,7 @@
 object frmFeed: TfrmFeed
-  Left = 516
+  Left = 440
   Height = 555
-  Top = 339
+  Top = 373
   Width = 809
   Caption = 'Easy Feed'
   ClientHeight = 555
@@ -69,6 +69,7 @@ object frmFeed: TfrmFeed
       MultiSelect = False
       ParentColor = False
       TabOrder = 0
+      OnDrawItem = lstFeedDrawItem
     end
   end
   object ImgCategory: TImageStrip
