@@ -11,7 +11,7 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="22"/>
+        <UsageCount Value="23"/>
       </Unit0>
       <Unit1>
         <Filename Value="munit.pas"/>
@@ -20,56 +20,56 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <CursorPos X="8" Y="6"/>
-        <UsageCount Value="22"/>
+        <UsageCount Value="23"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit1>
       <Unit2>
+        <Filename Value="wayrss.pas"/>
+        <IsPartOfProject Value="True"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="51"/>
+        <CursorPos X="21" Y="67"/>
+        <UsageCount Value="23"/>
+        <Loaded Value="True"/>
+      </Unit2>
+      <Unit3>
         <Filename Value="../../../Загрузки/IDE_Fpc_empty_Pas(1)/controls/xscontrols.pas"/>
         <UnitName Value="Xscontrols"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="1361"/>
         <UsageCount Value="10"/>
-      </Unit2>
-      <Unit3>
+      </Unit3>
+      <Unit4>
         <Filename Value="../../../Загрузки/IDE_Fpc_empty_Pas(1)/controls/dockmanager.pas"/>
         <UnitName Value="DockManager"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="659"/>
         <UsageCount Value="10"/>
-      </Unit3>
-      <Unit4>
+      </Unit4>
+      <Unit5>
         <Filename Value="../../Компоненты/Cross.CodebotExt/src/playlistmanager.pas"/>
         <UnitName Value="PlayListManager"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="22"/>
         <UsageCount Value="10"/>
-      </Unit4>
-      <Unit5>
+      </Unit5>
+      <Unit6>
         <Filename Value="../../Компоненты/Cross.CodebotExt/src/playlist.pas"/>
         <UnitName Value="PlayList"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="22"/>
         <CursorPos X="21" Y="16"/>
         <UsageCount Value="10"/>
-      </Unit5>
-      <Unit6>
+      </Unit6>
+      <Unit7>
         <Filename Value="../../Компоненты/Cross.CodebotExt/src/musicinfo.pas"/>
         <UnitName Value="MusicInfo"/>
         <EditorIndex Value="2"/>
         <TopLine Value="264"/>
         <CursorPos X="41" Y="113"/>
         <UsageCount Value="11"/>
-        <Loaded Value="True"/>
-      </Unit6>
-      <Unit7>
-        <Filename Value="wayrss.pas"/>
-        <IsPartOfProject Value="True"/>
-        <IsVisibleTab Value="True"/>
-        <EditorIndex Value="1"/>
-        <TopLine Value="47"/>
-        <CursorPos X="5" Y="70"/>
-        <UsageCount Value="22"/>
         <Loaded Value="True"/>
       </Unit7>
       <Unit8>
@@ -80,7 +80,7 @@
         <Loaded Value="True"/>
       </Unit8>
     </Units>
-    <JumpHistory Count="22" HistoryIndex="21">
+    <JumpHistory Count="28" HistoryIndex="27">
       <Position1>
         <Filename Value="munit.pas"/>
         <Caret Line="10" Column="22"/>
@@ -169,6 +169,30 @@
         <Filename Value="wayrss.pas"/>
         <Caret Line="53" Column="43" TopLine="38"/>
       </Position22>
+      <Position23>
+        <Filename Value="wayrss.pas"/>
+        <Caret Line="25" Column="55" TopLine="11"/>
+      </Position23>
+      <Position24>
+        <Filename Value="wayrss.pas"/>
+        <Caret Line="26" Column="55" TopLine="12"/>
+      </Position24>
+      <Position25>
+        <Filename Value="wayrss.pas"/>
+        <Caret Line="29" Column="53" TopLine="12"/>
+      </Position25>
+      <Position26>
+        <Filename Value="wayrss.pas"/>
+        <Caret Line="49" Column="3" TopLine="37"/>
+      </Position26>
+      <Position27>
+        <Filename Value="wayrss.pas"/>
+        <Caret Line="78" Column="8" TopLine="51"/>
+      </Position27>
+      <Position28>
+        <Filename Value="wayrss.pas"/>
+        <Caret Line="24"/>
+      </Position28>
     </JumpHistory>
     <RunParams>
       <FormatVersion Value="2"/>
