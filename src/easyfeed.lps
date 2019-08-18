@@ -3,7 +3,7 @@
   <ProjectSession>
     <Version Value="11"/>
     <BuildModes Active="Default"/>
-    <Units Count="9">
+    <Units Count="17">
       <Unit0>
         <Filename Value="easyfeed.lpr"/>
         <IsPartOfProject Value="True"/>
@@ -11,7 +11,7 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="23"/>
+        <UsageCount Value="28"/>
       </Unit0>
       <Unit1>
         <Filename Value="munit.pas"/>
@@ -19,19 +19,20 @@
         <ComponentName Value="frmFeed"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <CursorPos X="8" Y="6"/>
-        <UsageCount Value="23"/>
+        <IsVisibleTab Value="True"/>
+        <TopLine Value="70"/>
+        <CursorPos X="22" Y="78"/>
+        <UsageCount Value="28"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit1>
       <Unit2>
         <Filename Value="wayrss.pas"/>
         <IsPartOfProject Value="True"/>
-        <IsVisibleTab Value="True"/>
-        <EditorIndex Value="1"/>
-        <TopLine Value="51"/>
-        <CursorPos X="21" Y="67"/>
-        <UsageCount Value="23"/>
+        <EditorIndex Value="4"/>
+        <TopLine Value="9"/>
+        <CursorPos X="50" Y="30"/>
+        <UsageCount Value="28"/>
         <Loaded Value="True"/>
       </Unit2>
       <Unit3>
@@ -39,160 +40,244 @@
         <UnitName Value="Xscontrols"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="1361"/>
-        <UsageCount Value="10"/>
+        <UsageCount Value="9"/>
       </Unit3>
       <Unit4>
         <Filename Value="../../../Загрузки/IDE_Fpc_empty_Pas(1)/controls/dockmanager.pas"/>
         <UnitName Value="DockManager"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="659"/>
-        <UsageCount Value="10"/>
+        <UsageCount Value="9"/>
       </Unit4>
       <Unit5>
         <Filename Value="../../Компоненты/Cross.CodebotExt/src/playlistmanager.pas"/>
         <UnitName Value="PlayListManager"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="22"/>
-        <UsageCount Value="10"/>
+        <UsageCount Value="9"/>
       </Unit5>
       <Unit6>
         <Filename Value="../../Компоненты/Cross.CodebotExt/src/playlist.pas"/>
         <UnitName Value="PlayList"/>
-        <EditorIndex Value="-1"/>
-        <TopLine Value="22"/>
-        <CursorPos X="21" Y="16"/>
-        <UsageCount Value="10"/>
+        <EditorIndex Value="6"/>
+        <TopLine Value="271"/>
+        <CursorPos X="34" Y="285"/>
+        <UsageCount Value="13"/>
+        <Loaded Value="True"/>
       </Unit6>
       <Unit7>
         <Filename Value="../../Компоненты/Cross.CodebotExt/src/musicinfo.pas"/>
         <UnitName Value="MusicInfo"/>
-        <EditorIndex Value="2"/>
-        <TopLine Value="264"/>
-        <CursorPos X="41" Y="113"/>
-        <UsageCount Value="11"/>
+        <EditorIndex Value="7"/>
+        <TopLine Value="3"/>
+        <CursorPos X="3" Y="17"/>
+        <UsageCount Value="14"/>
         <Loaded Value="True"/>
       </Unit7>
       <Unit8>
         <Filename Value="../../Компоненты/easyrss-master/demo/count/demo.lpr"/>
-        <EditorIndex Value="3"/>
+        <EditorIndex Value="8"/>
         <CursorPos X="17" Y="23"/>
-        <UsageCount Value="10"/>
+        <UsageCount Value="13"/>
         <Loaded Value="True"/>
       </Unit8>
+      <Unit9>
+        <Filename Value="../../Компоненты/Cross.Codebot-master/source/codebot.graphics.types.pas"/>
+        <UnitName Value="Codebot.Graphics.Types"/>
+        <EditorIndex Value="3"/>
+        <TopLine Value="168"/>
+        <CursorPos X="21" Y="207"/>
+        <UsageCount Value="12"/>
+        <Loaded Value="True"/>
+      </Unit9>
+      <Unit10>
+        <Filename Value="../../Компоненты/Cross.Codebot-master/examples/easer/main.pas"/>
+        <ComponentName Value="Form1"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="Main"/>
+        <EditorIndex Value="2"/>
+        <TopLine Value="170"/>
+        <CursorPos X="37" Y="182"/>
+        <UsageCount Value="12"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit10>
+      <Unit11>
+        <Filename Value="easyrss.pas"/>
+        <UnitName Value="EasyRSS"/>
+        <EditorIndex Value="5"/>
+        <TopLine Value="89"/>
+        <CursorPos X="21" Y="96"/>
+        <UsageCount Value="12"/>
+        <Loaded Value="True"/>
+      </Unit11>
+      <Unit12>
+        <Filename Value="../../Компоненты/Cross.Codebot-master/source/codebot.system.pas"/>
+        <UnitName Value="Codebot.System"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="100"/>
+        <CursorPos X="3" Y="114"/>
+        <UsageCount Value="10"/>
+      </Unit12>
+      <Unit13>
+        <Filename Value="../../Компоненты/Cross.Codebot-master/examples/docker/main.pas"/>
+        <ComponentName Value="Form1"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="111"/>
+        <CursorPos X="53" Y="154"/>
+        <UsageCount Value="11"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit13>
+      <Unit14>
+        <Filename Value="../../Компоненты/Cross.Codebot-master/examples/docker/docker.spacing.pas"/>
+        <UnitName Value="Docker.Spacing"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="5"/>
+        <CursorPos X="18" Y="30"/>
+        <UsageCount Value="10"/>
+      </Unit14>
+      <Unit15>
+        <Filename Value="../../Компоненты/Cross.Codebot-master/source/codebot.graphics.pas"/>
+        <UnitName Value="Codebot.Graphics"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="209"/>
+        <CursorPos X="24" Y="219"/>
+        <UsageCount Value="10"/>
+      </Unit15>
+      <Unit16>
+        <Filename Value="../../Компоненты/Cross.Codebot-master/source/codebot.controls.scrolling.pas"/>
+        <UnitName Value="Codebot.Controls.Scrolling"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="426"/>
+        <CursorPos X="45" Y="442"/>
+        <UsageCount Value="10"/>
+      </Unit16>
     </Units>
-    <JumpHistory Count="28" HistoryIndex="27">
+    <JumpHistory Count="30" HistoryIndex="29">
       <Position1>
         <Filename Value="munit.pas"/>
-        <Caret Line="10" Column="22"/>
+        <Caret Line="30" Column="81" TopLine="17"/>
       </Position1>
       <Position2>
         <Filename Value="munit.pas"/>
-        <Caret Line="27" Column="21" TopLine="3"/>
+        <Caret Line="89" Column="37" TopLine="73"/>
       </Position2>
       <Position3>
         <Filename Value="munit.pas"/>
-        <Caret Line="29" Column="21" TopLine="3"/>
+        <Caret Line="38" Column="33" TopLine="21"/>
       </Position3>
       <Position4>
-        <Filename Value="munit.pas"/>
-        <Caret Line="30" Column="21" TopLine="3"/>
+        <Filename Value="../../Компоненты/Cross.Codebot-master/examples/easer/main.pas"/>
+        <Caret Line="82" Column="16" TopLine="67"/>
       </Position4>
       <Position5>
         <Filename Value="munit.pas"/>
-        <Caret Line="29" Column="21" TopLine="3"/>
+        <Caret Line="38" Column="23" TopLine="24"/>
       </Position5>
       <Position6>
-        <Filename Value="munit.pas"/>
-        <Caret Line="14" Column="23" TopLine="5"/>
+        <Filename Value="../../Компоненты/Cross.Codebot-master/examples/easer/main.pas"/>
+        <Caret Line="82" Column="16" TopLine="67"/>
       </Position6>
       <Position7>
         <Filename Value="munit.pas"/>
-        <Caret Line="18" Column="37" TopLine="5"/>
+        <Caret Line="29" Column="16" TopLine="15"/>
       </Position7>
       <Position8>
         <Filename Value="munit.pas"/>
-        <Caret Line="17" Column="37" TopLine="5"/>
+        <Caret Line="35" Column="4" TopLine="21"/>
       </Position8>
       <Position9>
         <Filename Value="munit.pas"/>
-        <Caret Line="16" Column="44" TopLine="5"/>
+        <Caret Line="42" Column="22" TopLine="28"/>
       </Position9>
       <Position10>
         <Filename Value="munit.pas"/>
-        <Caret Line="11" Column="24" TopLine="5"/>
+        <Caret Line="3" Column="15"/>
       </Position10>
       <Position11>
         <Filename Value="munit.pas"/>
-        <Caret Line="24" Column="24" TopLine="7"/>
+        <Caret Line="29" Column="6" TopLine="19"/>
       </Position11>
       <Position12>
-        <Filename Value="wayrss.pas"/>
-        <Caret Line="15" Column="26"/>
+        <Filename Value="munit.pas"/>
+        <Caret Line="64" Column="52" TopLine="51"/>
       </Position12>
       <Position13>
-        <Filename Value="wayrss.pas"/>
-        <Caret Line="20" Column="3"/>
+        <Filename Value="munit.pas"/>
+        <Caret Line="66" Column="12" TopLine="56"/>
       </Position13>
       <Position14>
-        <Filename Value="wayrss.pas"/>
-        <Caret Line="28" Column="7"/>
+        <Filename Value="munit.pas"/>
+        <Caret Line="64" Column="15" TopLine="51"/>
       </Position14>
       <Position15>
-        <Filename Value="wayrss.pas"/>
-        <Caret Line="32" Column="7" TopLine="10"/>
+        <Filename Value="munit.pas"/>
+        <Caret Line="67" Column="20" TopLine="48"/>
       </Position15>
       <Position16>
-        <Filename Value="wayrss.pas"/>
-        <Caret Line="76" TopLine="49"/>
+        <Filename Value="../../Компоненты/Cross.Codebot-master/examples/docker/main.pas"/>
+        <Caret Line="121" Column="29" TopLine="107"/>
       </Position16>
       <Position17>
-        <Filename Value="wayrss.pas"/>
-        <Caret Line="44" Column="37" TopLine="33"/>
+        <Filename Value="../../Компоненты/Cross.Codebot-master/examples/docker/main.pas"/>
+        <Caret Line="103" Column="3" TopLine="89"/>
       </Position17>
       <Position18>
-        <Filename Value="wayrss.pas"/>
-        <Caret Line="79" Column="9" TopLine="55"/>
+        <Filename Value="munit.pas"/>
+        <Caret Line="63" Column="17" TopLine="54"/>
       </Position18>
       <Position19>
-        <Filename Value="wayrss.pas"/>
-        <Caret Line="32" Column="5" TopLine="17"/>
+        <Filename Value="../../Компоненты/Cross.Codebot-master/examples/docker/main.pas"/>
+        <Caret Line="120" Column="23" TopLine="108"/>
       </Position19>
       <Position20>
-        <Filename Value="../../Компоненты/Cross.CodebotExt/src/musicinfo.pas"/>
-        <Caret Line="87" Column="17" TopLine="76"/>
+        <Filename Value="../../Компоненты/Cross.Codebot-master/examples/easer/main.pas"/>
+        <Caret Line="299" Column="23" TopLine="278"/>
       </Position20>
       <Position21>
-        <Filename Value="wayrss.pas"/>
-        <Caret Line="41" Column="17" TopLine="27"/>
+        <Filename Value="munit.pas"/>
+        <Caret Line="87" Column="6" TopLine="63"/>
       </Position21>
       <Position22>
-        <Filename Value="wayrss.pas"/>
-        <Caret Line="53" Column="43" TopLine="38"/>
+        <Filename Value="munit.pas"/>
+        <Caret Line="88" Column="41" TopLine="75"/>
       </Position22>
       <Position23>
-        <Filename Value="wayrss.pas"/>
-        <Caret Line="25" Column="55" TopLine="11"/>
+        <Filename Value="munit.pas"/>
+        <Caret Line="43" Column="14" TopLine="38"/>
       </Position23>
       <Position24>
-        <Filename Value="wayrss.pas"/>
-        <Caret Line="26" Column="55" TopLine="12"/>
+        <Filename Value="munit.pas"/>
+        <Caret Line="44" Column="14" TopLine="18"/>
       </Position24>
       <Position25>
-        <Filename Value="wayrss.pas"/>
-        <Caret Line="29" Column="53" TopLine="12"/>
+        <Filename Value="munit.pas"/>
+        <Caret Line="25" Column="10" TopLine="18"/>
       </Position25>
       <Position26>
-        <Filename Value="wayrss.pas"/>
-        <Caret Line="49" Column="3" TopLine="37"/>
+        <Filename Value="munit.pas"/>
+        <Caret Line="24" Column="10" TopLine="18"/>
       </Position26>
       <Position27>
-        <Filename Value="wayrss.pas"/>
-        <Caret Line="78" Column="8" TopLine="51"/>
+        <Filename Value="munit.pas"/>
+        <Caret Line="73" Column="5" TopLine="61"/>
       </Position27>
       <Position28>
-        <Filename Value="wayrss.pas"/>
-        <Caret Line="24"/>
+        <Filename Value="../../Компоненты/Cross.Codebot-master/examples/docker/main.pas"/>
+        <Caret Line="126" Column="3" TopLine="111"/>
       </Position28>
+      <Position29>
+        <Filename Value="munit.pas"/>
+        <Caret Line="69" Column="9" TopLine="61"/>
+      </Position29>
+      <Position30>
+        <Filename Value="munit.pas"/>
+        <Caret Line="78" Column="16" TopLine="55"/>
+      </Position30>
     </JumpHistory>
     <RunParams>
       <FormatVersion Value="2"/>

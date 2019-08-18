@@ -1,11 +1,12 @@
 object frmFeed: TfrmFeed
-  Left = 240
+  Left = 516
   Height = 555
-  Top = 215
+  Top = 339
   Width = 809
   Caption = 'Easy Feed'
   ClientHeight = 555
   ClientWidth = 809
+  OnShow = FormShow
   LCLVersion = '2.0.4.0'
   object pnlLeft: TPanel
     Left = 4
@@ -29,10 +30,11 @@ object frmFeed: TfrmFeed
       BorderStyle = bsSingle
       DesktopFont = True
       HotTrack = False
-      ItemHeight = 15
+      ItemHeight = 48
       MultiSelect = False
       ParentColor = False
       TabOrder = 0
+      OnDrawItem = lstCategoryDrawItem
     end
   end
   object Splitter: TSplitter
@@ -68,5 +70,9 @@ object frmFeed: TfrmFeed
       ParentColor = False
       TabOrder = 0
     end
+  end
+  object ImgCategory: TImageStrip
+    left = 160
+    top = 16
   end
 end

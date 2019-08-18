@@ -12,17 +12,19 @@ uses
  Codebot.System;
 
  type
-
   { IWayRssInfo }
-
   IWayRssInfo = interface ['{4C46E053-1C4A-430C-A8B3-E3A4DDD46129}']
+  function GetDescription: string;
   function GetImageUrl:    string;
   function GetTitle:       string;
   function GetURL:         string;
   property URL:            string  read GetURL;
   property Title:          string  read GetTitle;
   property ImageUrl:       string  read GetImageUrl;
+  property Description:    string  read GetDescription;
   end;
+
+  function AddRss(RssUrl: String) : IWayRssInfo;
 
   type
   TWayRssInfoList = TArrayList<IWayRssInfo>;
@@ -38,11 +40,18 @@ implementation
   FURL:                    string;
   FTitle:                  string;
   FImageUrl:               string;
+  FDescription:            string;
   public
   constructor Create(URL: string);
   function GetImageUrl:    string;
   function GetTitle:       string;
   function GetURL:         string;
+  function GetDescription: string;
+ end;
+
+ function AddRss(RssUrl: String): IWayRssInfo;
+ begin
+   Result := TWayRssInfo.Create(RssUrl);
  end;
 
  { TWayRssInfo }
@@ -57,6 +66,7 @@ implementation
     FURL:=URL;
     FTitle:=Rss.Title;
     FImageUrl:=Rss.Image.Url;
+    FDescription:=Rss.Content;
    finally
     rss.Free;
    end;
@@ -77,25 +87,10 @@ implementation
   Result:=FURL;
   end;
 
-
-
-{
-constructor TWayRssInfo.Create(URI: String);
-var
-  Rss: TRSSReader;
-begin
-   rss := TRSSReader.Create;
-  try
-    Rss.LoadFromHttp(URI);
-    FNewsCount            :=Rss.Count;
-    FCategory             :=Rss.Category;
-    FURI                  :=URI;
-
-  finally
-    rss.Free;
+  function TWayRssInfo.GetDescription: string;
+  begin
+    Result:=FDescription;
   end;
-end;  }
-
 
 end.
 
