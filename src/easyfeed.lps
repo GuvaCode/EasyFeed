@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <Version Value="11"/>
+    <BuildModes Active="Default"/>
+    <Units Count="4">
+      <Unit0>
+        <Filename Value="easyfeed.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="-1"/>
+        <TopLine Value="-1"/>
+        <CursorPos X="-1" Y="-1"/>
+        <UsageCount Value="20"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="munit.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmFeed"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <IsVisibleTab Value="True"/>
+        <CursorPos X="11" Y="19"/>
+        <UsageCount Value="20"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="../../../Загрузки/IDE_Fpc_empty_Pas(1)/controls/xscontrols.pas"/>
+        <UnitName Value="Xscontrols"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="1361"/>
+        <UsageCount Value="10"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="../../../Загрузки/IDE_Fpc_empty_Pas(1)/controls/dockmanager.pas"/>
+        <UnitName Value="DockManager"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="659"/>
+        <UsageCount Value="10"/>
+      </Unit3>
+    </Units>
+    <JumpHistory Count="11" HistoryIndex="10">
+      <Position1>
+        <Filename Value="munit.pas"/>
+        <Caret Line="10" Column="22"/>
+      </Position1>
+      <Position2>
+        <Filename Value="munit.pas"/>
+        <Caret Line="27" Column="21" TopLine="3"/>
+      </Position2>
+      <Position3>
+        <Filename Value="munit.pas"/>
+        <Caret Line="29" Column="21" TopLine="3"/>
+      </Position3>
+      <Position4>
+        <Filename Value="munit.pas"/>
+        <Caret Line="30" Column="21" TopLine="3"/>
+      </Position4>
+      <Position5>
+        <Filename Value="munit.pas"/>
+        <Caret Line="29" Column="21" TopLine="3"/>
+      </Position5>
+      <Position6>
+        <Filename Value="munit.pas"/>
+        <Caret Line="14" Column="23" TopLine="5"/>
+      </Position6>
+      <Position7>
+        <Filename Value="munit.pas"/>
+        <Caret Line="18" Column="37" TopLine="5"/>
+      </Position7>
+      <Position8>
+        <Filename Value="munit.pas"/>
+        <Caret Line="17" Column="37" TopLine="5"/>
+      </Position8>
+      <Position9>
+        <Filename Value="munit.pas"/>
+        <Caret Line="16" Column="44" TopLine="5"/>
+      </Position9>
+      <Position10>
+        <Filename Value="munit.pas"/>
+        <Caret Line="11" Column="24" TopLine="5"/>
+      </Position10>
+      <Position11>
+        <Filename Value="munit.pas"/>
+        <Caret Line="24" Column="24" TopLine="7"/>
+      </Position11>
+    </JumpHistory>
+    <RunParams>
+      <FormatVersion Value="2"/>
+      <Modes Count="0" ActiveMode=""/>
+    </RunParams>
+  </ProjectSession>
+</CONFIG>

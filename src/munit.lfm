@@ -1,0 +1,70 @@
+object frmFeed: TfrmFeed
+  Left = 198
+  Height = 555
+  Top = 145
+  Width = 809
+  Caption = 'LiteFeed'
+  ClientHeight = 555
+  ClientWidth = 809
+  LCLVersion = '2.0.4.0'
+  object pnlLeft: TPanel
+    Left = 4
+    Height = 547
+    Top = 4
+    Width = 208
+    Align = alLeft
+    BorderSpacing.Left = 4
+    BorderSpacing.Top = 4
+    BorderSpacing.Bottom = 4
+    BevelOuter = bvNone
+    ClientHeight = 547
+    ClientWidth = 208
+    TabOrder = 0
+    object lstCategory: TDrawList
+      Left = 0
+      Height = 547
+      Top = 0
+      Width = 208
+      Align = alClient
+      DesktopFont = True
+      HotTrack = False
+      ItemHeight = 15
+      MultiSelect = False
+      ParentColor = False
+      TabOrder = 0
+    end
+  end
+  object Splitter: TSplitter
+    Left = 212
+    Height = 555
+    Top = 0
+    Width = 5
+  end
+  object pnlCenter: TPanel
+    Left = 217
+    Height = 547
+    Top = 4
+    Width = 588
+    Align = alClient
+    BorderSpacing.Top = 4
+    BorderSpacing.Right = 4
+    BorderSpacing.Bottom = 4
+    BevelOuter = bvNone
+    ClientHeight = 547
+    ClientWidth = 588
+    TabOrder = 2
+    object lstFeed: TDrawList
+      Left = 0
+      Height = 547
+      Top = 0
+      Width = 588
+      Align = alClient
+      DesktopFont = True
+      HotTrack = False
+      ItemHeight = 15
+      MultiSelect = False
+      ParentColor = False
+      TabOrder = 0
+    end
+  end
+end
