@@ -11,7 +11,7 @@ uses
   Codebot.System,
   Codebot.Graphics,
   Codebot.Graphics.Types,
-  Codebot.Controls.Scrolling;
+  Codebot.Controls.Scrolling, LazWebkitCtrls, LazWebkitSettings;
 type
 
   { TfrmFeed }
@@ -24,6 +24,9 @@ type
     pnlCenter: TPanel;
     pnlLeft: TPanel;
     Splitter: TSplitter;
+    Splitter1: TSplitter;
+    Browser: TWebkitBrowser;
+    WebkitSettings: TWebkitSettings;
     procedure FormCreate(Sender: TObject);
     procedure FormDestroy(Sender: TObject);
     procedure FormShow(Sender: TObject);
@@ -32,6 +35,7 @@ type
     procedure lstCategorySelectItem(Sender: TObject);
     procedure lstFeedDrawItem(Sender: TObject; Surface: ISurface;
       Index: Integer; Rect: TRectI; State: TDrawState);
+    procedure lstFeedSelectItem(Sender: TObject);
   private
      FWayList: TWayRssInfoList;
 
@@ -88,7 +92,6 @@ procedure TfrmFeed.lstFeedDrawItem(Sender: TObject; Surface: ISurface;
  var
    S: string;
    Rss: IWayRssInfo;
-   i:integer;
 begin
     Rss := FWayList[lstCategory.ItemIndex];
     S:=Rss.GetRss.Elements[Index].Title;
@@ -97,6 +100,17 @@ begin
 //S:=Rss.Items;
 
 Surface.TextOut(Theme.Font, S, rect, drLeft);
+end;
+
+procedure TfrmFeed.lstFeedSelectItem(Sender: TObject);
+var
+   S: string;
+   Rss: IWayRssInfo;
+begin
+  Rss := FWayList[lstCategory.ItemIndex];
+  S:=Rss.GetRss.Elements[lstFeed.ItemIndex].Description;
+  //Composer.LoadContent(ACode, 'text/html', 'UTF-8', '');
+  Browser.LoadContent(S, 'text/html', 'UTF-8', '');
 end;
 
 procedure TfrmFeed.PictureLoadFromUrl(const APicture: IBitmap;
@@ -118,8 +132,10 @@ procedure TfrmFeed.FormShow(Sender: TObject);
 begin
   AddRssUrl('https://castle-engine.io/wp/feed/');
   AddRssUrl('https://lazplanet.blogspot.com/feeds/posts/default?alt=rss');
-  AddRssUrl('https://devlaz.ru/feed/');
-  AddRssUrl('http://freepascal.ru/forum/feed.php?mode=forums');
+  AddRssUrl('https://feedmix.novaclic.com/atom2rss.php?source=https://devlaz.ru/feed/');
+  AddRssUrl('http://zengl.org/forum/index.php?PHPSESSID=2nrchm3llpnuga00nqfm2hiqs3&type=rss;action=.xml');
+//  https://feedmix.novaclic.com/atom2rss.php?source=
+  AddRssUrl('https://feedmix.novaclic.com/atom2rss.php?source=http://freepascal.ru/forum/feed.php');
 end;
 
 procedure TfrmFeed.FormCreate(Sender: TObject);

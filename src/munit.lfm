@@ -1,11 +1,11 @@
 object frmFeed: TfrmFeed
-  Left = 440
+  Left = 281
   Height = 555
-  Top = 373
-  Width = 809
+  Top = 186
+  Width = 860
   Caption = 'Easy Feed'
   ClientHeight = 555
-  ClientWidth = 809
+  ClientWidth = 860
   OnCreate = FormCreate
   OnDestroy = FormDestroy
   OnShow = FormShow
@@ -14,20 +14,20 @@ object frmFeed: TfrmFeed
     Left = 4
     Height = 547
     Top = 4
-    Width = 208
+    Width = 175
     Align = alLeft
     BorderSpacing.Left = 4
     BorderSpacing.Top = 4
     BorderSpacing.Bottom = 4
     BevelOuter = bvNone
     ClientHeight = 547
-    ClientWidth = 208
+    ClientWidth = 175
     TabOrder = 0
     object lstCategory: TDrawList
       Left = 0
       Height = 547
       Top = 0
-      Width = 208
+      Width = 175
       Align = alClient
       BorderStyle = bsSingle
       DesktopFont = True
@@ -41,30 +41,30 @@ object frmFeed: TfrmFeed
     end
   end
   object Splitter: TSplitter
-    Left = 212
+    Left = 179
     Height = 555
     Top = 0
     Width = 5
   end
   object pnlCenter: TPanel
-    Left = 217
+    Left = 184
     Height = 547
     Top = 4
-    Width = 588
+    Width = 672
     Align = alClient
     BorderSpacing.Top = 4
     BorderSpacing.Right = 4
     BorderSpacing.Bottom = 4
     BevelOuter = bvNone
     ClientHeight = 547
-    ClientWidth = 588
+    ClientWidth = 672
     TabOrder = 2
     object lstFeed: TDrawList
       Left = 0
       Height = 547
       Top = 0
-      Width = 588
-      Align = alClient
+      Width = 324
+      Align = alLeft
       BorderStyle = bsSingle
       DesktopFont = True
       HotTrack = False
@@ -73,6 +73,22 @@ object frmFeed: TfrmFeed
       ParentColor = False
       TabOrder = 0
       OnDrawItem = lstFeedDrawItem
+      OnSelectItem = lstFeedSelectItem
+    end
+    object Splitter1: TSplitter
+      Left = 324
+      Height = 547
+      Top = 0
+      Width = 5
+    end
+    object Browser: TWebkitBrowser
+      Left = 329
+      Height = 547
+      Top = 0
+      Width = 343
+      Align = alClient
+      TabOrder = 2
+      Settings = WebkitSettings
     end
   end
   object ImgCategory: TImageStrip
@@ -219,5 +235,60 @@ object frmFeed: TfrmFeed
       5F0A7E97B55516AFABA465AA4CFE4D110F36147407DCB62ED740D78181E66F5E
       ECAFDBFBB3D1495A00F80BDDB3FDFB9E7889390000000049454E44AE426082
     }
+  end
+  object WebkitSettings: TWebkitSettings
+    AutoLoadImages = True
+    AutoResizeWindow = False
+    AutoShrinkImages = True
+    CursiveFontFamily = 'serif'
+    DefaultEncoding = 'iso-8859-1'
+    DefaultFontFamily = 'sans-serif'
+    DefaultFontSize = 12
+    DefaultMonospaceFontSize = 10
+    EnableAcceleratedCompositing = False
+    EnableCaretBrowsing = False
+    EnableDefaultContextMenu = True
+    EnableDeveloperExtras = False
+    EnableDnsPrefetching = True
+    EnableDomPaste = False
+    EnableFileAccessFromFileUris = False
+    EnableFrameFlattening = False
+    EnableFullscreen = True
+    EnableHtml5Database = True
+    EnableHtml5LocalStorage = True
+    EnableHyperlinkAuditing = False
+    EnableJavaApplet = True
+    EnableOfflineWebApplicationCache = True
+    EnablePageCache = False
+    EnablePlugins = True
+    EnablePrivateBrowsing = False
+    EnableScripts = True
+    EnableSiteSpecificQuirks = False
+    EnableSmoothScrolling = False
+    EnableSpatialNavigation = False
+    EnableSpellChecking = False
+    EnableUniversalAccessFromFileUris = False
+    EnableWebaudio = False
+    EnableWebgl = False
+    EnableXssAuditor = True
+    Enforce96Dpi = False
+    FantasyFontFamily = 'serif'
+    Html5LocalStorageDatabasePath = '/home/vadim/.local/share/webkit/databases'
+    JavascriptCanAccessClipboard = False
+    JavascriptCanOpenWindowsAutomatically = False
+    MediaPlaybackAllowsInline = True
+    MediaPlaybackRequiresUserGesture = False
+    MinimumFontSize = 5
+    MinimumLogicalFontSize = 5
+    MonospaceFontFamily = 'monospace'
+    PrintBackgrounds = True
+    ResizableTextAreas = True
+    SansSerifFontFamily = 'sans-serif'
+    SerifFontFamily = 'serif'
+    TabKeyCyclesThroughElements = True
+    UserAgent = 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/538.15 (KHTML, like Gecko) Version/8.0 Safari/538.15'
+    ZoomStep = 0.100000001490116
+    left = 64
+    top = 24
   end
 end
